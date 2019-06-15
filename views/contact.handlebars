@@ -1,0 +1,107 @@
+<header class="header">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.png" class="logo" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item ">
+            <a class="nav-link hvr-underline-from-center" href="/">Home<span class="sr-only">(current)</span> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-center" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-center" href="/team">Team</a>
+          </li>
+
+          <li class="nav-item active">
+            <a class="nav-link hvr-underline-from-center" href="/contact">Contact Us</a>
+          </li>
+
+
+        </ul>
+
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="container-fluid solution">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 pt-5">
+        <h2 class="pheader text-center">Get in touch with us!</h2>
+        </h2>
+      </div>
+      <hr>
+
+    </div>
+  </div>
+
+
+
+  <div class="container contact justify-content-center">
+    <form action="/contact" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" placeholder="Name" name="name">
+      </div>
+
+
+      <div class="form-group">
+        <label for="name">Email</label>
+        <input type="text" class="form-control" placeholder="Email" name="email">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Subject</label>
+        <input type="text" class="form-control" placeholder="Subject" name="subject">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Message</label>
+        <textarea name="message" id="" cols="30" rows="5" class="form-control" name="message"></textarea>
+      </div>
+      <div class="container text-center">
+        <button class="btn btn-primary text-center " type="submit">Submit</button>
+      </div>
+
+    </form>
+  </div>
+  </div>
+</main>
+
+<script>
+  $('form').on('submit', (e) => {
+    e.preventDefault();
+
+
+    const name = document.getElementsByName('name')
+    const email = document.getElementsByName('email')
+    const subject = document.getElementsByName('subject')
+    const message = docuemtn.getElementsByName('message')
+
+    const data = {
+      name,
+      email,
+      subject,
+      message
+    }
+
+    $.post('/contact', data, () => {
+      console.log('Server received data')
+    })
+
+
+
+  })
+
+</script>

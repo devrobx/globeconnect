@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --red: #CA2222;
+    --pink: #DB3E3E;
+    --lightpink: #F1C5C5;
+    --white: #F2F1F1;
+    --black: #0D0D0D;
+}
+
+
+.navbar {
+    min-height: 30px;
+    margin: 0;
+    margin-bottom: 10px;
+
+}
+
+.navbar-custom {
+
+    box-shadow: 0 5px 10px #efefef;
+}
+
+.logo {
+    height: 35px;
+    padding: 2px 8px;
+}
+
+.logo:hover {
+    height: 30px;
+    transition: .7s;
+}
+
+
+
+
+.nav-custom {
+    color: var(--black);
+}
+
+.nav-item {
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+
+.landing {
+    padding-top: 150px;
+    background-image: url('../img/help.jpeg');
+    min-height: 80vh;
+    box-shadow: inset 0 0 0 2000px rgba(20, 20, 20, 0.15);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: var(--red);
+}
+
+.btn-info {
+    background: var(--black) !important;
+    border-color: #0D0D0D !important;
+}
+
+.mission {
+    background-color: var(--black);
+    min-height: 70vh;
+}
+
+.info {
+    text-decoration: none !important;
+    color: var(--white);
+}
+
+.mh2 {
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.mphoto {
+    height: 300px;
+    width: 350px;
+}
+
+.mtext {
+    color: var(--white);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.partners {
+    background-color: transparent;
+    min-height: 30vh;
+    box-shadow: 0 5px 10px #efefef;
+
+}
+
+.pheader {
+    text-transform: uppercase;
+    color: var(--red);
+}
+
+.ptext {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.part2 {
+    min-height: 70vh;
+}
+
+.myicon {
+    background-color: var(--lightpink) !important;
+}
+
+.footer {
+    background-color: var(--white);
+    height: 50px;
+    box-shadow: 0 5px 10px #efefef;
+}
+
+.soc {
+    font-size: 1.3rem;
+    color: black;
+}
+
+footer p {
+    font-size: .6rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.carousel {
+    max-height: 550px;
+}
